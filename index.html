@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YuBob</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="timer.css">
+  </head>
+  <body>
+      <div class="jumbotron col-lg-12">
+		<div class="col-lg-4">
+		</div>
+		<div class="col-lg-4 text-center">
+			<img src="logo.png">
+		</div>
+		<div class="col-lg-4">
+		</div>
+	</div>
+
+ <div class="row">
+	<div class="col-lg-12">
+		<img src="offer.jpg" class="img-responsive">
+	</div>
+</div>
+
+
+      <div class="container display">
+<div class="row">
+	
+	<div class="col-lg-12">
+		<div id="clock" class="clock">
+				<h1 class="event_title">Offer starts in</h1>
+					<div id="numbers">
+
+						<span class="days"></span>
+
+
+						<span class="hours"></span>
+
+
+						<span class="minutes"></span>
+
+
+						<span class="seconds"></span>
+
+					</div>
+					<div id="units">
+						<span>Days</span>
+						<span>Hrs</span>
+						<span>Min</span>
+						<span>Sec</span>
+					</div>
+			</div>
+	</div>
+	
+
+</div>
+		
+<div class="row">
+	<div id="door" class="hide">
+				<h1 class="event_title">Offer is live now!</h1>
+				<p class="action_caption">Click the button below to enter offer page.</p>
+				<button class="call_to_action_button" type="button" onclick="liveStream()">Goto offer page!</button>
+			</div>
+</div>
+
+       <div class="row">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
+
+            <div class="form-top text-center head rcorners2">
+
+          			<h1>Register Here</h1>
+
+
+    			</div>
+
+          <form class="form-horizontal rcorners2" action="" method="post">
+            <div class="form-group">
+               
+                  <input type="text" class="form-control" placeholder="Enter your name" name="name" required>
+               
+            </div>
+           
+            <div class="form-group">
+              <input type="tel" pattern= "[7-9][0-9]{9}" title="Mobile number should start with 7,8 or 9 and contain only 10 digits." class="form-control" id="mob" placeholder="10 digits Mobile Number" name="mob" required>
+               
+            </div>
+            <div class="form-group">
+                    <input type="email" class="form-control" placeholder="e-mail id" name="mail" required>
+              
+            </div>
+  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="pass" required>
+              
+            </div>
+ <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="cpass" required>
+              
+            </div>
+            <div class="form-group">
+              
+               
+                  <input type="submit" class="btn-register" name="save">
+
+                
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4">
+        </div>
+</div><!--row end2-->
+      </div>
+<script src="timer.js"></script>
+  </body>
+</html>
